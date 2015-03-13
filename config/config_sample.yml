@@ -155,6 +155,7 @@ swift: &swift
     swift_password: _env:OS_PASSWORD
     swift_tenant_name: _env:OS_TENANT_NAME
     swift_region_name: _env:OS_REGION_NAME
+    swift_auth_version: _env:OS_AUTH_VERSION
 
 # This flavor stores the images in Glance (to integrate with openstack)
 # See also: https://github.com/docker/openstack-docker

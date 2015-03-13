@@ -26,6 +26,9 @@ RUN apt-get update \
 COPY . /docker-registry
 COPY ./config/boto.cfg /etc/boto.cfg
 
+# Install Swift Driver
+RUN pip install docker-registry-driver-swift
+
 # Install core
 RUN pip install /docker-registry/depends/docker-registry-core
 
